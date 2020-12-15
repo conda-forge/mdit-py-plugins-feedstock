@@ -1,18 +1,18 @@
 {% set name = "mdit-py-plugins" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: cf16f09bef6741e1773f939dbdc02562a74ea3dc7b74e8583fc609eb7f785766
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: cdba4c903fe0d735a5a14341339ecd09a5ee205482d9458d5cba8e992cac0ba6
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -38,12 +38,12 @@ test:
     - mdit_py_plugins.texmath
 
 about:
-  home: "https://github.com/executablebooks/mdit-py-plugins"
+  home: https://github.com/executablebooks/mdit-py-plugins
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "Collection of plugins for markdown-it-py"
-  doc_url: "https://markdown-it-py.readthedocs.io/en/latest/plugins.html"
+  summary: Collection of plugins for markdown-it-py
+  doc_url: https://markdown-it-py.readthedocs.io/en/latest/plugins.html
 
 extra:
   recipe-maintainers:
