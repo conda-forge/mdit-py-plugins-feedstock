@@ -1,5 +1,5 @@
 {% set name = "mdit-py-plugins" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cdba4c903fe0d735a5a14341339ecd09a5ee205482d9458d5cba8e992cac0ba6
+  sha256: 065b4bb49957efff0b08555cf8d23ad6755e931873fecca5636afcd7d56215db
 
 build:
   number: 0
