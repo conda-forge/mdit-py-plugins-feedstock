@@ -1,5 +1,5 @@
 {% set name = "mdit-py-plugins" %}
-{% set version = "0.2.6" %}
+{% set version = "0.2.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1e467ca2ea056e8065cbd5d6c61e5052bb50826bde84c40f6a5ed77e82125710
+  sha256: 5991cef645502e80a5388ec4fc20885d2313d4871e8b8e320ca2de14ac0c015f
 
 build:
   number: 0
@@ -19,10 +19,14 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - markdown-it-py >=0.5.8,<2.0.0
+    - markdown-it-py ~=1.0
     - python >=3.6
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - mdit_py_plugins
     - mdit_py_plugins.amsmath
