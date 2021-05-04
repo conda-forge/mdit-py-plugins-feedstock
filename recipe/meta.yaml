@@ -19,10 +19,14 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - markdown-it-py >=0.5.8,<2.0.0
+    - markdown-it-py ~=1.0
     - python >=3.6
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - mdit_py_plugins
     - mdit_py_plugins.amsmath
