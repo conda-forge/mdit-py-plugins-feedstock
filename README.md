@@ -119,4 +119,5 @@ Feedstock Maintainers
 =====================
 
 * [@choldgraf](https://github.com/choldgraf/)
+* [@dopplershift](https://github.com/dopplershift/)
 
