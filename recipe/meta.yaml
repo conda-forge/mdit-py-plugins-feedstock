@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
+    - flit-core >=3.4,<4
     - pip
     - python >=3.7
   run:
     - markdown-it-py >=1.0.0,<3.0.0
     - python >=3.7
-    - flit-core >=3.4,<4
 
 test:
   requires:
