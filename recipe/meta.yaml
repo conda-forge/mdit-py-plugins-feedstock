@@ -1,5 +1,5 @@
 {% set name = "mdit-py-plugins" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ecc24f51eeec6ab7eecc2f9724e8272c2fb191c2e93cf98109120c2cace69750
+  sha256: 3fc13298497d6e04fe96efdd41281bfe7622152f9caa1815ea99b5c893de9441
 
 build:
   number: 0
@@ -16,11 +16,12 @@ build:
 
 requirements:
   host:
+    - flit-core >=3.4,<4
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - markdown-it-py >=1.0.0,<3.0.0
-    - python >=3.6
+    - python >=3.7
 
 test:
   requires:
@@ -53,3 +54,4 @@ extra:
   recipe-maintainers:
     - dopplershift
     - choldgraf
+    - chrisjsewell
