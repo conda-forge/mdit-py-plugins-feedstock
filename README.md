@@ -1,11 +1,11 @@
-About mdit-py-plugins
-=====================
+About mdit-py-plugins-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mdit-py-plugins-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/executablebooks/mdit-py-plugins
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mdit-py-plugins-feedstock/blob/main/LICENSE.txt)
 
 Summary: Collection of plugins for markdown-it-py
 
