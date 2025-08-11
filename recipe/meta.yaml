@@ -1,5 +1,6 @@
 {% set name = "mdit-py-plugins" %}
 {% set version = "0.5.0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -20,7 +21,7 @@ requirements:
     - pip
     - python {{ python_min }}
   run:
-    - markdown-it-py >=1.0.0,<4.0.0
+    - markdown-it-py >=2.0.0,<5.0.0
     - python >={{ python_min }}
 
 test:
