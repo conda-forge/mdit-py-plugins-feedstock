@@ -1,5 +1,6 @@
 {% set name = "mdit-py-plugins" %}
-{% set version = "0.4.2" %}
+{% set version = "0.5.0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 5f2cd1fdb606ddf152d37ec30e46101a60512bc0e5fa1a7002c36647b09e26b5
+  sha256: f4918cb50119f50446560513a8e311d574ff6aaed72606ddae6d35716fe809c6
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,7 +21,7 @@ requirements:
     - pip
     - python {{ python_min }}
   run:
-    - markdown-it-py >=1.0.0,<4.0.0
+    - markdown-it-py >=2.0.0,<5.0.0
     - python >={{ python_min }}
 
 test:
